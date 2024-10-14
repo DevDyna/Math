@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:overworld",
+	"generator": {
+		"type": "minecraft:flat",
+		"settings": {
+			"biome": "minecraft:deep_dark",
+			"layers": [
+				{
+					"block": "minecraft:bedrock",
+					"height": 1
+				},
+				{
+					"block": "xycraft_world:kivi",
+					"height": 120
+				},
+				{
+					"block": "xycraft_world:aluminum_storage",
+					"height": 7
+				}
+			],
+			"structure_overrides": []
+		}
+	}
+}
