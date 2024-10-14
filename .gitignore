@@ -80,3 +80,9 @@ config/xycraft/core_client.toml
 config/xycraft/machines_common.toml
 /defaultconfigs
 .curseclient
+usernamecache.json
+usercache.json
+rhino.local.properties
+options.txt
+minecraftinstance.json
+kubejs/jsconfig.json
