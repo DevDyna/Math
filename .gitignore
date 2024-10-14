@@ -86,3 +86,6 @@ rhino.local.properties
 options.txt
 minecraftinstance.json
 kubejs/jsconfig.json
+kubejs/config/probejs.json
+kubejs/config/common.properties
+kubejs/config/client.properties
