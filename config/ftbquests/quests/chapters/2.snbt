@@ -1,0 +1,98 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2"
+	group: ""
+	id: "392EFB9E17D44BE0"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4A310953530B17EF"]
+			id: "2471DBE385B5EDD3"
+			tasks: [{
+				id: "5FC0FDC78857E6CA"
+				item: "kubejs:2"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4688925711CABE74"]
+			id: "5B2EBE75900E6709"
+			tasks: [{
+				id: "7EB7E4DEF2C45267"
+				item: "kubejs:0"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["379403715AB7EF36"]
+			id: "4A310953530B17EF"
+			tasks: [{
+				id: "5AC0877021A27B97"
+				item: "kubejs:plus"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4A310953530B17EF"]
+			id: "4688925711CABE74"
+			tasks: [{
+				id: "4052ADA1031CF989"
+				item: "kubejs:less"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4999626C883F42B2"]
+			id: "1C2A424A823DFD49"
+			tasks: [{
+				id: "10B738024EA8BC23"
+				item: "kubejs:for"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			id: "60461BF877B013E8"
+			tasks: [{
+				id: "0ABB92F1BD852CD3"
+				item: "kubejs:div"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			id: "398AC03681F2D39E"
+			tasks: [{
+				id: "273F8611549C2C65"
+				item: "kubejs:power"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4A310953530B17EF"]
+			id: "4999626C883F42B2"
+			tasks: [{
+				id: "43DB070A25E775C9"
+				item: "kubejs:chem"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+	]
+	title: "2"
+}
