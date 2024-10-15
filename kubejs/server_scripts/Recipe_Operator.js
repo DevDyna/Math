@@ -3,7 +3,7 @@
  * @param {Internal.RecipesEventJS} event
  */
 let OperatorRecipes = (event) => {
-  let crafting_number_max = 99;
+  
   let uncraft = (input, outputs) =>
     event.custom({
       type: "twilightforest:uncrafting",
