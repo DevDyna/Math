@@ -1,0 +1,100 @@
+   
+   __  __           _                       _    ____                                    ____            _         
+  |  \/  | ___   __| |___    __ _ _ __   __| |  |  _ \ ___  ___  ___  _   _ _ __ ___ ___|  _ \ __ _  ___| | _____  
+  | |\/| |/ _ \ / _` / __|  / _` | '_ \ / _` |  | |_) / _ \/ __|/ _ \| | | | '__/ __/ _ \ |_) / _` |/ __| |/ / __| 
+  | |  | | (_) | (_| \__ \ | (_| | | | | (_| |  |  _ <  __/\__ \ (_) | |_| | | | (_|  __/  __/ (_| | (__|   <\__ \ 
+  |_|  |_|\___/ \__,_|___/  \__,_|_| |_|\__,_|  |_| \_\___||___/\___/ \__,_|_|  \___\___|_|   \__,_|\___|_|\_\___/ 
+   
+File that contain all curseforge files 
+Mod used: 
+-alchemistry-1.20.1-2.3.4.jar 
+-alchemylib-1.20.1-1.0.30.jar 
+-appleskin-forge-mc1.20.1-2.5.1.jar 
+-architectury-9.2.14-forge.jar 
+-BetterAdvancements-Forge-1.20.1-0.4.2.10.jar 
+-Bookshelf-Forge-1.20.1-20.2.13.jar 
+-BotanyPots-Forge-1.20.1-13.0.39.jar 
+-Bountiful-6.0.3+1.20.1-forge.jar 
+-CBMultipart-1.20.1-3.3.0.146-universal.jar 
+-chemlib-1.20.1-2.0.19.jar 
+-cloth-config-11.1.136-forge.jar 
+-CodeChickenLib-1.20.1-4.4.0.516-universal.jar 
+-cofh_core-1.20.1-11.0.2.56.jar 
+-collective-1.20.1-7.84.jar 
+-create-1.20.1-0.5.1.i.jar.disabled 
+-createaddition-1.20.1-1.2.4e.jar.disabled 
+-create_optical-0.2.1.jar.disabled 
+-Cucumber-1.20.1-7.0.12.jar 
+-cucumberjs-0.0.4-1.20.1.jar 
+-curios-forge-5.10.0+1.20.1.jar 
+-DefaultWorldType-1.20.1-4.0.4.jar 
+-embeddium-0.3.31+mc1.20.1.jar 
+-embersrekindled-1.20.1-1.3.9.jar.disabled 
+-experimentalsettingsdisabler-1.20.1-3.0.jar 
+-ferritecore-6.0.1-forge.jar 
+-ftb-chunks-forge-2001.3.1.jar 
+-ftb-essentials-forge-2001.2.2.jar 
+-ftb-filter-system-forge-1.0.2.jar 
+-ftb-library-forge-2001.2.4.jar 
+-ftb-quests-forge-2001.4.8.jar 
+-ftb-teams-forge-2001.3.0.jar 
+-ftb-ultimine-forge-2001.1.5.jar 
+-ftb-xmod-compat-forge-2.1.1.jar 
+-functionalstorage-1.20.1-1.2.10.jar 
+-fusion-1.1.1-forge-mc1.20.1.jar 
+-ImmediatelyFast-Forge-1.2.21+1.20.4.jar 
+-Jade-1.20.1-forge-11.11.1.jar 
+-jei-1.20.1-forge-15.20.0.104.jar 
+-Kambrik-6.1.1+1.20.1-forge.jar 
+-kotlinforforge-4.11.0-all.jar 
+-kubejs-create-forge-2001.2.5-build.2.jar.disabled 
+-kubejs-forge-2001.6.5-build.14.jar 
+-kubejs-mekanism-forge-2001.1.5.1-build.2.jar 
+-kubejs-thermal-2001.1.10-build.2.jar.disabled 
+-kubejsadditions-forge-4.3.2.jar 
+-kubejsbotanypots-1.2.2.jar 
+-laserio-1.6.8.jar 
+-LibX-1.20.1-5.0.12.jar 
+-mcjtylib-1.20-8.0.6.jar 
+-Mekanism-1.20.1-10.4.9.61.jar 
+-MekanismGenerators-1.20.1-10.4.9.61.jar 
+-MetalBarrels-forge-1.20.1-3.jar 
+-modernfix-forge-5.19.4+mc1.20.1.jar 
+-moreburners-0.1.0.jar.disabled 
+-morejs-forge-1.20.1-0.10.0.jar 
+-MouseTweaks-forge-mc1.20.1-2.25.1.jar 
+-NuclearCraft-1.20.1-1.0.0-rc.2.jar.disabled 
+-probejs-6.0.1-forge.jar 
+-ProjectRed-1.20.1-4.19.0-core.jar 
+-ProjectRed-1.20.1-4.19.0-expansion.jar 
+-ProjectRed-1.20.1-4.19.0-illumination.jar 
+-ProjectRed-1.20.1-4.19.0-integration.jar 
+-ProjectRed-1.20.1-4.19.0-transmission.jar 
+-railcraft-reborn-1.20.1-1.1.7.jar.disabled 
+-rftoolsbase-1.20-5.0.5.jar 
+-rftoolsutility-1.20-6.0.6.jar 
+-rhino-forge-2001.2.3-build.6.jar 
+-SkyblockBuilder-1.20.1-5.1.24.jar 
+-sophisticatedbackpacks-1.20.1-3.20.11.1115.jar 
+-sophisticatedcore-1.20.1-0.6.34.718.jar 
+-spark-1.10.53-forge.jar 
+-ThermalExtra-3.1.8-1.20.1.jar.disabled 
+-thermal_dynamics-1.20.1-11.0.1.23.jar.disabled 
+-thermal_expansion-1.20.1-11.0.1.29.jar.disabled 
+-thermal_foundation-1.20.1-11.0.6.70.jar.disabled 
+-thoriumreactors-1.20.1-0.1.7.1b-all.jar 
+-titanium-1.20.1-3.8.32.jar 
+-torchmaster-20.1.8.jar 
+-twilightforest-1.20.1-4.3.2508-universal.jar 
+-wares-1.20.1-1.2.9.jar 
+-XyCraft 
+-XyCraft 
+-XyCraft 
+-zume-1.1.2.jar 
+# 
+# 84 files 
+# 
+ResourcePack used: 
+# 
+# 0 files 
+# 
