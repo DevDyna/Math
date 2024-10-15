@@ -97,3 +97,6 @@ config/moreburners-client.toml
 config/railcraft-client.toml
 config/railcraft-common.toml
 config/rftoolsutility-client.toml
+config/thoriumreactors-client.toml
+config/thoriumreactors-common.toml
+kubejs/README.txt
