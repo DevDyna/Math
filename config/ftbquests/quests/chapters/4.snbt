@@ -1,0 +1,193 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4"
+	group: ""
+	id: "063697A88FA61F11"
+	images: [
+		{
+			color: 11141120
+			height: 4.0d
+			image: "xycraft_machines:block/basic_machine"
+			rotation: 0.0d
+			width: 4.0d
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			color: 43520
+			height: 4.0d
+			image: "xycraft_machines:block/basic_machine"
+			rotation: 0.0d
+			width: 4.0d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			color: 170
+			height: 4.0d
+			image: "xycraft_machines:block/basic_machine"
+			rotation: 0.0d
+			width: 4.0d
+			x: 4.5d
+			y: 1.0d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["52056C5098C7930A"]
+			id: "35B05EFCDEC2FB1B"
+			tasks: [{
+				id: "6D30512641E757B5"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35B05EFCDEC2FB1B"]
+			id: "6335DA99D82E10E0"
+			tasks: [{
+				id: "36ED634DEE513915"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			id: "226779D8DF98C547"
+			tasks: [{
+				id: "6FB26155C03229A4"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			id: "52056C5098C7930A"
+			tasks: [{
+				id: "72358C3FEEADB31D"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "2F67BBD2AACFDB27"
+			tasks: [{
+				id: "7DBA5BDE67E06A5D"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "0E51AD225A3642B8"
+			tasks: [
+				{
+					id: "2CF44760C703D0FF"
+					item: "projectred_expansion:pneumatic_tube"
+					type: "item"
+				}
+				{
+					id: "6C884E402281A1F9"
+					item: "projectred_expansion:transposer"
+					type: "item"
+				}
+			]
+			title: "Tubes!"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "1D4C492472FD5293"
+			tasks: [{
+				id: "37E31229CCF59313"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:gems/xychorium)"
+					}
+				}
+				title: "Any #forge:gems/xychorium"
+				type: "item"
+			}]
+			title: "Xychoriums"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "553296ED7FED9BD6"
+			tasks: [{
+				id: "13C31B5E0BCD3D40"
+				item: "xycraft_machines:fabricator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["08BE505C177C5E71"]
+			id: "7783610B57D3AAEE"
+			tasks: [{
+				id: "3EE2E08F7636979C"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["15B87C6233BB9002"]
+			id: "08BE505C177C5E71"
+			tasks: [{
+				id: "465CD35875279932"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52056C5098C7930A"]
+			id: "58DB32BD71791126"
+			tasks: [{
+				id: "6DE63534008EF335"
+				item: "projectred_core:platformed_plate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58DB32BD71791126"]
+			id: "55A4A574EB5922FE"
+			tasks: [{
+				id: "596687D509D57837"
+				item: "projectred_integration:timer_gate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "398AC03681F2D39E"
+			tasks: [{
+				id: "273F8611549C2C65"
+				item: "kubejs:power"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+	]
+	title: "4. Optimization"
+}
