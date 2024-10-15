@@ -12,7 +12,7 @@ let ChemTag = (event) => {
           ? Item.of(mod_name + ":ingot_" + element_name)
           : Item.of(mod_name + ":" + element_name + "_ingot");
       if (valid_ingot != "minecraft:air") {
-        event.add("kubejs:chem_ingots", valid_ingot);
+        event.add("kubejs:chem_ingots", valid_ingot.id);
       }
     });
   });
