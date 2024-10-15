@@ -3,12 +3,38 @@
 	default_quest_shape: ""
 	filename: "1"
 	group: ""
+	icon: {
+		Count: 1
+		id: "kubejs:paxel"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "30BBF4EBEE5145C1"
+	images: [
+		{
+			height: 4.0d
+			image: "xycraft_world:block/kivi"
+			rotation: 0.0d
+			width: 4.0d
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			height: 4.0d
+			image: "xycraft_world:block/connected/aluminum_storage_single"
+			rotation: 0.0d
+			width: 4.0d
+			x: 2.5d
+			y: -3.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			id: "5E9AE9B982348D62"
+			subtitle: "Just a Pick with a Axe"
 			tasks: [{
 				id: "60281437DA1DD053"
 				item: {
@@ -20,31 +46,97 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["5E9AE9B982348D62"]
+			dependencies: ["3EE643D31E4C8FCF"]
 			id: "562418074FE51E18"
+			subtitle: "Pebble on my feets"
 			tasks: [{
 				id: "326E60DC7E47F761"
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["562418074FE51E18"]
 			id: "379403715AB7EF36"
+			subtitle: "1 = 1"
 			tasks: [{
 				id: "048078568E1DD538"
 				item: "kubejs:1"
 				type: "item"
 			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"006D84881BC839E3"
+				"449899E26FD5B2FF"
+			]
+			id: "3EE643D31E4C8FCF"
+			rewards: [{
+				count: 2
+				id: "225207B3BF961BFD"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C862C3C7A668A34"
+				item: "xycraft_machines:extractor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["215A2216BF455FC9"]
+			id: "006D84881BC839E3"
+			tasks: [{
+				id: "3C1EF286BCC19641"
+				item: "xycraft_machines:machine_base"
+				type: "item"
+			}]
 			x: 0.0d
-			y: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1E791E7233ABC03F"]
+			id: "449899E26FD5B2FF"
+			tasks: [{
+				id: "318C2FBE8BA51378"
+				item: "xycraft_world:kivi_rajan"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E9AE9B982348D62"]
+			id: "1E791E7233ABC03F"
+			tasks: [{
+				id: "2EB5ABCB7D1BD5B7"
+				item: "xycraft_world:kivi"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E9AE9B982348D62"]
+			id: "215A2216BF455FC9"
+			tasks: [{
+				id: "107514545E4A2439"
+				item: "xycraft_world:aluminum_storage"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
 		}
 	]
-	title: "1"
+	title: "1. Breaking bad"
 }
