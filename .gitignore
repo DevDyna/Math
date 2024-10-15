@@ -89,3 +89,11 @@ kubejs/jsconfig.json
 kubejs/config/probejs.json
 kubejs/config/common.properties
 kubejs/config/client.properties
+config/ftbxmodcompat.snbt
+config/mcjtylib-client.toml
+config/moreburners-common.toml
+config/moreburners-client.toml
+/config/NuclearCraft
+config/railcraft-client.toml
+config/railcraft-common.toml
+config/rftoolsutility-client.toml
