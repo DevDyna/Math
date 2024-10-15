@@ -1,7 +1,5 @@
 // priority: -1
 
-console.log(Platform.getMods());
-
 // /**
 //  *
 //  * @param {Registry.Item} event
