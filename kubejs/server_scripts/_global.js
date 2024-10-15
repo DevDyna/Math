@@ -120,15 +120,6 @@ global.chem = {
         "tennessine",
         "oganesson",
       ],
-        mods: [
-          "mekanism",
-          "create",
-          "embers",
-          "xycraft_world",
-          "minecraft",
-          "chemlib",
-        ],
-      
 }
 
 const nul = "minecraft:air";
