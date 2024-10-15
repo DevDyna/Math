@@ -235,10 +235,10 @@ let simple_ware = (
 let simple_deal = (item_input,min,max) =>{
   return {
     type: "item",
-    content: "wares:sealed_delivery_agreement",
+    content: item_input,
     amount: {
-      min: 1,
-      max: 1,
+      min: min,
+      max: max,
     },
     unitWorth: 60
   }
