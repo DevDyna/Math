@@ -65,7 +65,7 @@ let Bounty_Reward = (event) => {
     );
   }
 
-  bounty.op_bounty.forEach((e) => {
+  bounty.operator_bounty.forEach((e) => {
     bounty.rewards.ar.push(simple_deal("kubejs:" + e, 1, 4));
   });
 
