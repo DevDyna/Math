@@ -132,4 +132,4 @@ global.chem = {
 }
 
 const nul = "minecraft:air";
-
+const crafting_number_max = 99;
