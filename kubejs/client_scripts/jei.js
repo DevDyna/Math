@@ -44,6 +44,7 @@ if (DEV_MODE) {
 
 JEIEvents.removeCategories((event) => {
   let list = [
+    'minecraft:furnace',
     "mekanismgenerators:fission",
     "ae2:condenser",
     "minecraft:anvil",
@@ -57,7 +58,7 @@ JEIEvents.removeCategories((event) => {
     "create:draining",
     "create:item_application",
     "create:mystery_conversion",
-    //"create:spout_filling",
+    "create:spout_filling",
     "thermal:bottler",
     "thermal:disenchantment_fuel",
     "thermal:gourmand_fuel",
