@@ -4,8 +4,104 @@
 	filename: "3"
 	group: ""
 	id: "37AD613A9FFCD586"
+	images: [{
+		height: 4.0d
+		image: "projectred_expansion:block/transposer_top"
+		rotation: 0.0d
+		width: 4.0d
+		x: 1.0d
+		y: -5.0d
+	}]
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
-	title: "3"
+	quests: [
+		{
+			dependencies: ["2CD03B038E2CC581"]
+			id: "160B2A551A69ED4C"
+			tasks: [{
+				id: "65F3EE518F4ED6DC"
+				item: "alchemistry:dissolver"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2CD03B038E2CC581"]
+			id: "15B87C6233BB9002"
+			tasks: [{
+				id: "15858F8D232C3789"
+				item: "alchemistry:combiner"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2CD03B038E2CC581"]
+			id: "0B301E7720D10332"
+			tasks: [{
+				id: "322DE0ACED2FB287"
+				item: "alchemistry:compactor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"4DB339B16340A9BF"
+				"71E6D39A894E0B96"
+				"7D92C68E39688ED7"
+			]
+			id: "2CD03B038E2CC581"
+			tasks: [{
+				id: "4D5346E3E1367872"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"03BCC0B8854C26EE"
+				"7D92C68E39688ED7"
+			]
+			id: "71E6D39A894E0B96"
+			tasks: [{
+				id: "759F63DB8FDCFDF4"
+				item: "kubejs:iron_rod"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["03BCC0B8854C26EE"]
+			id: "7D92C68E39688ED7"
+			tasks: [{
+				id: "5B5D14D389E89200"
+				item: "chemlib:iron_plate"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"03BCC0B8854C26EE"
+				"71E6D39A894E0B96"
+			]
+			id: "4DB339B16340A9BF"
+			tasks: [{
+				id: "3395D6671914D7C8"
+				item: "mekanismgenerators:turbine_blade"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+	]
+	title: "3. Interactions"
 }
