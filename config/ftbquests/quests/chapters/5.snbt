@@ -1,0 +1,19 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5"
+	group: ""
+	id: "2D12FE31B1D407F5"
+	images: [{
+		height: 4.0d
+		image: "projectred_expansion:block/auto_crafter_bottom"
+		rotation: 0.0d
+		width: 4.0d
+		x: 0.0d
+		y: -0.5d
+	}]
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "5."
+}
