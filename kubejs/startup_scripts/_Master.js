@@ -8,7 +8,7 @@ console.log(Platform.getMods());
 //  */
 
 StartupEvents.registry("item", (event) => {
-  Numbers(event);
+  NumberInit(event);
   OperatorInit(event);
   CommonInit(event);
 });
