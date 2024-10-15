@@ -49,11 +49,6 @@ let commonRecipes = (event) => {
     "3x kubejs:for",
   ]);
 
-  event.recipes.kubejs.shapeless("twilightforest:uncrafting_table", [
-    "minecraft:crafting_table",
-    "kubejs:0",
-  ]);
-
   event.recipes.kubejs.shaped("mekanismgenerators:wind_generator", [
     [nul, "mekanismgenerators:turbine_blade", nul],
     [nul, "kubejs:iron_rod", nul],
