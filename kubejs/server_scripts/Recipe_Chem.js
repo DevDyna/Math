@@ -4,64 +4,58 @@
  * @param {Internal.RecipesEventJS} event
  */
 let ChemConversion = (event) => {
-  let elements = Array.from(global.chem.name);
-  let name_element = Array.from(global.chem.name);
-  let name_element2 = Array.from(global.chem.name);
+  let element_0 = Array.from(global.chem.name);
+  let element_1 = Array.from(global.chem.name);
+  let element_2 = Array.from(global.chem.name);
 
   let mod_list = ["mekanism", "xycraft_world", "minecraft", "chemlib"];
 
+  // CHEM NUMBER -> ELEMENT
   for (let i = 1; i < crafting_number_max + 1; i++) {
-    event.recipes.kubejs.shapeless("chemlib:" + elements[i], [
+    event.recipes.kubejs.shapeless("chemlib:" + element_0[i], [
       "kubejs:chem",
       "kubejs:" + i,
     ]);
 
     mod_list.forEach((mod_list_1) => {
+      //SHAPELESS PAXEL INGOT -> PLATE
       if (
+        Item.of("chemlib:" + element_0[i] + "_plate") != "minecraft:air" &&
         (mod_list_1 == "mekanism"
-          ? Item.of(mod_list_1 + ":ingot_" + elements[i])
-          : Item.of(mod_list_1 + ":" + elements[i] + "_ingot")) !=
-        "minecraft:air"
-      ) {
-        tagItems.ingot.push((mod_list_1 == "mekanism"
-            ? Item.of(mod_list_1 + ":ingot_" + elements[i])
-            : Item.of(mod_list_1 + ":" + elements[i] + "_ingot")));
-      }
-
-      //tagItems.ingot
-
-      if (
-        Item.of("chemlib:" + elements[i] + "_plate") != "minecraft:air" &&
-        (mod_list_1 == "mekanism"
-          ? Item.of(mod_list_1 + ":ingot_" + elements[i])
-          : Item.of(mod_list_1 + ":" + elements[i] + "_ingot")) !=
+          ? Item.of(mod_list_1 + ":ingot_" + element_0[i])
+          : Item.of(mod_list_1 + ":" + element_0[i] + "_ingot")) !=
           "minecraft:air" &&
-        name_element2.indexOf(elements[i]) != -1
+        element_2.indexOf(element_0[i]) != -1
       ) {
         event.recipes.kubejs
-          .shapeless("chemlib:" + elements[i] + "_plate", [
+          .shapeless("chemlib:" + element_0[i] + "_plate", [
             "kubejs:paxel",
-            mod_list_1 + ":" + elements[i] + "_ingot",
+            (mod_list_1 == "mekanism"
+            ? Item.of(mod_list_1 + ":ingot_" + element_0[i])
+            : Item.of(mod_list_1 + ":" + element_0[i] + "_ingot")),
           ])
           .damageIngredient("kubejs:paxel", 1);
-        name_element2.splice(name_element2.indexOf(elements[i]), 1);
+        element_2.splice(element_2.indexOf(element_0[i]), 1);
       }
 
       mod_list.forEach((mod_list_2) => {
+        //SMELTING DUST -> INGOT
         if (
-          Item.of(mod_list_2 + ":" + elements[i] + "_dust") !=
+          Item.of(mod_list_2 + ":" + element_0[i] + "_dust") !=
             "minecraft:air" &&
           (mod_list_1 == "mekanism"
-            ? Item.of(mod_list_1 + ":ingot_" + elements[i])
-            : Item.of(mod_list_1 + ":" + elements[i] + "_ingot")) !=
+            ? Item.of(mod_list_1 + ":ingot_" + element_0[i])
+            : Item.of(mod_list_1 + ":" + element_0[i] + "_ingot")) !=
             "minecraft:air" &&
-          name_element.indexOf(elements[i]) != -1
+          element_1.indexOf(element_0[i]) != -1
         ) {
           event.recipes.minecraft.smelting(
-            mod_list_1 + ":" + elements[i] + "_ingot",
-            mod_list_2 + ":" + elements[i] + "_dust"
+            mod_list_1 == "mekanism"
+              ? Item.of(mod_list_1 + ":ingot_" + element_0[i])
+              : Item.of(mod_list_1 + ":" + element_0[i] + "_ingot"),
+            mod_list_2 + ":" + element_0[i] + "_dust"
           );
-          name_element.splice(name_element.indexOf(elements[i]), 1);
+          element_1.splice(element_1.indexOf(element_0[i]), 1);
         }
       });
     });
