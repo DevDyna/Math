@@ -18,17 +18,6 @@
 	quests: [
 		{
 			dependencies: ["2CD03B038E2CC581"]
-			id: "160B2A551A69ED4C"
-			tasks: [{
-				id: "65F3EE518F4ED6DC"
-				item: "alchemistry:dissolver"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["2CD03B038E2CC581"]
 			id: "15B87C6233BB9002"
 			tasks: [{
 				id: "15858F8D232C3789"
