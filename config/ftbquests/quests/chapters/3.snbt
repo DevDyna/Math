@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "3"
 	group: ""
+	icon: "alchemistry:combiner"
 	id: "37AD613A9FFCD586"
 	images: [{
 		height: 4.0d
