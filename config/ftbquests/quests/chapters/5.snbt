@@ -4,16 +4,135 @@
 	filename: "5"
 	group: ""
 	id: "2D12FE31B1D407F5"
-	images: [{
-		height: 4.0d
-		image: "projectred_expansion:block/auto_crafter_bottom"
-		rotation: 0.0d
-		width: 4.0d
-		x: 0.0d
-		y: -0.5d
-	}]
+	images: [
+		{
+			height: 4.0d
+			image: "mekanism:block/fuelwood_heater/left_active"
+			rotation: 0.0d
+			width: 4.0d
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			height: 4.0d
+			image: "mekanism:block/bin/back"
+			rotation: 0.0d
+			width: 4.0d
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			height: 4.0d
+			image: "mekanism:block/base/base_bottom"
+			rotation: 0.0d
+			width: 4.0d
+			x: 1.0d
+			y: -2.5d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
-	title: "5."
+	quests: [
+		{
+			id: "5C0BA66807E86A32"
+			tasks: [{
+				id: "24DDFA47646DB418"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			id: "35567F94CF8D715A"
+			tasks: [{
+				id: "4143869F3C0DBD73"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			id: "457B89672B1E2633"
+			tasks: [{
+				id: "75F83100A323D15A"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			id: "79716B04E1E158E5"
+			tasks: [{
+				id: "1B0BEA470365E7BC"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.5d
+		}
+		{
+			id: "24521616668B330A"
+			tasks: [{
+				id: "52D5EF59EFC19BC3"
+				item: "mekanism:logistical_sorter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			id: "3CC1FC4A4524323F"
+			tasks: [{
+				id: "3C42F6BB00467190"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -5.0d
+		}
+		{
+			id: "691383ACA97B513E"
+			tasks: [{
+				id: "2D0627A0489F0919"
+				item: "mekanism:chemical_oxidizer"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -6.0d
+		}
+		{
+			id: "398AC03681F2D39E"
+			tasks: [{
+				id: "273F8611549C2C65"
+				item: "kubejs:power"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -7.0d
+		}
+		{
+			id: "746765168DF0D9FF"
+			tasks: [{
+				id: "761AA8ADC2883D65"
+				item: "projectred_core:red_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			id: "5D9075278955610A"
+			tasks: [{
+				id: "250496F8CC4E8148"
+				item: "mekanism:configurator"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -7.5d
+		}
+	]
+	title: "5. Operation"
 }
