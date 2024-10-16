@@ -9,4 +9,5 @@ StartupEvents.registry("item", (event) => {
   NumberInit(event);
   OperatorInit(event);
   CommonInit(event);
+  CoinsInit(event)
 });
