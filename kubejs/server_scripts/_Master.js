@@ -32,7 +32,7 @@ ServerEvents.tags("item", (event) => {
 // let ChemTag=(event)=>{}
 ServerEvents.lowPriorityData((event) => {
 
-  Bounty_Remove(event)
+  //Bounty_Remove(event)
   Bounty_Reward(event)
   Bounty_Quest(event)
   Bounty_Core(event)
