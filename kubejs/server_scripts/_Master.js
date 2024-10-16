@@ -10,9 +10,8 @@ ServerEvents.recipes((event) => {
   commonRecipes(event);
   OperatorRecipes(event);
   ChemConversion(event);
-
-  // event.recipes.kubejs.shapeless("kubejs:less", ["kubejs:plus"]);
-  // event.recipes.kubejs.shapeless("kubejs:plus", ["kubejs:less"]);
+  LogFactoryRecipe(event);
+  specialRecipes(event);
 });
 
 // /**
@@ -22,6 +21,7 @@ ServerEvents.recipes((event) => {
 // let ChemTag=(event)=>{}
 ServerEvents.tags("item", (event) => {
   ChemTag(event);
+  BrokenFixerTag(event);
 });
 
 
