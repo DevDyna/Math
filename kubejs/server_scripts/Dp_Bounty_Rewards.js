@@ -3,70 +3,76 @@
  * @param {Internal.DataPackEventJS} event
  */
 let Bounty_Reward = (event) => {
-  for (let i = 0; i < 10; i++) {
-    bounty.rewards.ar.push(
-      ware_nbt(
-        "Decree Chem",
-        1,
-        `[{id:"bountiful:decree",Count:1,tag:{ "bountiful:decree_data": '{"ids":["chem_core"]}'}}]`,
-        `[{id:"kubejs:` + i + `",Count:{max:64,min:1,step:1}}]`,
-        "Decree Chem"
-      )
-    );
+  let coins = ["bronze", "silver", "gold", "platinum"];
 
-    bounty.rewards.ar.push(
-      ware_nbt(
-        "Decree Math",
-        1,
-        `[{id:"bountiful:decree",Count:1,tag:{ "bountiful:decree_data": '{"ids":["math_core"]}'}}]`,
-        `[{id:"kubejs:` + i + `",Count:{max:64,min:1,step:1}}]`,
-        "Decree Math"
-      )
-    );
+  coins.forEach((e, index) => {
+    global.chem.name.forEach((c, ind) => {
+      if (ind > 40 && ind <= 90)
+        bounty.rewards.ar.push(
+          ware_nbt(
+            "🧪 Science Exam 🧪",
+            "{max:256,min:24,step:1}",
+            `[{id:"kubejs:` + e + `_coin",Count:1}]`,
+            `[{id:"chemlib:` +
+              c +
+              `",Count:{max:${(index + 1) * 16},min:${Math.floor(
+                index * 16 - 1
+              )},step:1}}]`,
+            "Minechem Enterprise ®"
+          )
+        );
+    });
 
-    bounty.rewards.ar.push(
-      ware_nbt(
-        "Decree Operator",
-        1,
-        `[{id:"bountiful:decree",Count:1,tag:{ "bountiful:decree_data": '{"ids":["op_core"]}'}}]`,
-        `[{id:"kubejs:` + i + `",Count:{max:64,min:1,step:1}}]`,
-        "Decree Operator"
-      )
-    );
+    for (let i = 0; i < 100; i++) {
+      bounty.rewards.ar.push(
+        ware_nbt(
+          "⛏ Paxel ⛏",
+          1,
+          `[{id:"kubejs:paxel",Count:1}]`,
+          `[{id:"kubejs:` + e + `_coin",Count:{max:10,min:1,step:1}}]`,
+          "Mine and Craft PLC"
+        )
+      );
 
-    bounty.rewards.ar.push(
-      ware_nbt(
-        "Decree Other",
-        1,
-        `[{id:"bountiful:decree",Count:1,tag:{ "bountiful:decree_data": '{"ids":["other_core"]}'}}]`,
-        `[{id:"kubejs:` + i + `",Count:{max:64,min:1,step:1}}]`,
-        "Decree Other"
-      )
-    );
+      bounty.rewards.ar.push(
+        ware_nbt(
+          "✉ Decree ✉",
+          1,
+          `[{id:"bountiful:decree",Count:1}]`,
+          `[{id:"kubejs:` + e + `_coin",Count:{max:10,min:1,step:1}}]`,
+          "Decree Service Inc."
+        )
+      );
 
-    bounty.rewards.ar.push(
-      ware_nbt(
-        "Uncrafting Table",
-        1,
-        `[{id:"twilightforest:uncrafting_table",Count:1}]`,
-        `[{id:"kubejs:` + i + `",Count:{max:64,min:1,step:1}}]`,
-        "Uncrafting Table"
-      )
-    );
+      bounty.rewards.ar.push(
+        ware_nbt(
+          "🔥 Uncrafting Table 🔥",
+          1,
+          `[{id:"twilightforest:uncrafting_table",Count:1}]`,
+          `[{id:"kubejs:` + e + `_coin",Count:{max:10,min:1,step:1}}]`,
+          "Twilight Forest ©"
+        )
+      );
 
-    bounty.rewards.ar.push(
-      ware_nbt(
-        "Backpack",
-        1,
-        `[{id:"sophisticatedbackpacks:backpack",Count:1,tag:{inventorySlots:27,renderInfo:{upgradeItems:[{Count:1b,id:"sophisticatedbackpacks:feeding_upgrade"}]},upgradeSlots:1}}]`,
-        `[{id:"kubejs:` + i + `",Count:{max:64,min:1,step:1}}]`,
-        "Backpack"
-      )
-    );
-  }
+      bounty.rewards.ar.push(
+        ware_nbt(
+          "⛄ Backpack ⛄",
+          1,
+          `[{id:"sophisticatedbackpacks:backpack",Count:1},{id:"sophisticatedbackpacks:advanced_feeding_upgrade",Count:1}]`,
+          `[{id:"kubejs:` + e + `_coin",Count:{max:10,min:1,step:1}}]`,
+          "Sophisticated Home LLC"
+        )
+      );
 
-  bounty.operator_bounty.forEach((e) => {
-    bounty.rewards.ar.push(simple_deal("kubejs:" + e, 1, 4));
+      bounty.rewards.ar.push(simple_deal('kubejs:power',1,8))
+    }
+  });
+
+  global.chem.name.forEach((e) => {
+    bounty.rewards.ar.push(simple_deal("chemlib:" + e, 1, 4));
+    bounty.rewards.ar.push(simple_deal("chemlib:" + e + "_nugget", 1, 4));
+    bounty.rewards.ar.push(simple_deal("chemlib:" + e + "_ingot", 1, 4));
+    bounty.rewards.ar.push(simple_deal("chemlib:" + e + "_metal_block", 1, 4));
   });
 
   bounty.rewards.ar.forEach((e, index) => {
