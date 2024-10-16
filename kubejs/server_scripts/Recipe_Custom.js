@@ -56,6 +56,31 @@ let specialRecipes = (event) => {
       weighted: false,
     },
   });
+
+  event.custom({
+    type: "alchemistry:dissolver",
+    group: "alchemistry:dissolver",
+    input: {
+      count: 1,
+      ingredient: {
+        item: "kubejs:plus",
+      },
+    },
+    output: {
+      groups: [
+        {
+          probability: 100,
+          results: [{
+            count: 1,
+            item: 'kubejs:less',
+          }],
+        },
+      ],
+      rolls: 1,
+      weighted: false,
+    },
+  });
+
   //---------------------------------------------------------------------//
   //CUSTOM - XYCRAFT
   //---------------------------------------------------------------------//
