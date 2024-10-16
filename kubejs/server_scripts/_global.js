@@ -128,8 +128,8 @@ global.chem = {
 const nul = "minecraft:air";
 const crafting_number_max = 99;
 const crafting_number_min = 0;
-const bounty_pools_url = "bountiful:bounty_pools/bountiful/";
-const bounty_decrees_url = "bountiful:bounty_decrees/bountiful/";
+const bounty_pools_url = "bountiful:bounty_pools/kubejs/";
+const bounty_decrees_url = "bountiful:bounty_decrees/kubejs/";
 
 //BOUNTIFUL & WARES VAR
 let bounty = {
@@ -165,15 +165,15 @@ let rnd25 = () => {
  * 
  * @param {string} displayName
  * @param {{max:Number,min:Number,step:Number}|Number} time_to_trade {max:10,min:1,step:2}
- * @param {{id:Internal.ItemStack,Count:Number|{max:Number,min:Number,step:Number},tag:Internal.CompoundTag_}|Internal.CompoundTag_} reward
+ * @param {{id:Internal.ItemStack,Count:Number,tag:Internal.CompoundTag_}} reward
  * "minecraft:chests/buried_treasure" or
  *
  * [{id:'minecraft:stone',Count:1}] or
  *
  * [{id:'minecraft:stone',Count:1},{id:'minecraft:stone',Count:1}] or
  *
- * [{id:'minecraft:stone',Count:{max:64,min:12,step:8},tag:{CanDestroy:["minecraft:chain"]}
- * @param {{id:Internal.ItemStack,Count:Number|{max:Number,min:Number,step:Number},tag:Internal.CompoundTag_}|Internal.CompoundTag_} payment
+ * [{id:'minecraft:stone',Count:1,tag:{CanDestroy:["minecraft:chain"]}
+ * @param {{id:Internal.ItemStack,Count:Number|{max:Number,min:Number,step:Number},tag:Internal.CompoundTag_}|Internal.CompoundTag_} quest
  * "minecraft:chests/buried_treasure" or
  *
  * [{id:'minecraft:stone',Count:1}] or
@@ -184,7 +184,7 @@ let rnd25 = () => {
  * @param {string} deal_title "Fancy Title"
  * @returns Internal.CompoundTag_
  */
-let ware_nbt = (displayName, time_to_trade, reward, payment, deal_title) => {
+let ware_nbt = (displayName, time_to_trade, reward, quest, deal_title) => {
   return {
     type: "item",
     content: "wares:sealed_delivery_agreement",
@@ -193,11 +193,11 @@ let ware_nbt = (displayName, time_to_trade, reward, payment, deal_title) => {
       max: 1,
     },
     unitWorth: 60,
-    nbt: `{display:{Name:'{"text":"${displayName}","italic":false}'},ordered:${time_to_trade},payment:${payment},requested:${reward},title:\'{"text":"${deal_title}"}\'}`,
+    nbt: `{deliveryTime:{max:60,min:10,step:10},display:{Lore:['{"text":"${displayName}","italic":false}']},ordered:${time_to_trade},payment:${reward},requested:${quest},title:'{"text":"${deal_title}"}'}`,
   }
 };
 /**
- * 
+ * Item.of('wares:sealed_delivery_agreement', '')
  * @param {string} displayName 
  * @param {{max:Number,min:Number,step:Number}|Number} time_to_trade 
  * @param {Internal.ItemStack} reward 
