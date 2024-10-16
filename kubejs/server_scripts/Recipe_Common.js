@@ -3,15 +3,13 @@
  * @param {Internal.RecipesEventJS} event
  */
 let commonRecipes = (event) => {
-
-    let numToItem = (ar) => {
-        let list = [];
-        ar.forEach((e) => {
-          list.push("kubejs:" + e);
-        });
-        return list;
-      };
-
+  let numToItem = (ar) => {
+    let list = [];
+    ar.forEach((e) => {
+      list.push("kubejs:" + e);
+    });
+    return list;
+  };
 
   event.recipes.kubejs.shapeless("xycraft_machines:machine_base", [
     "xycraft_world:kivi",
@@ -25,9 +23,9 @@ let commonRecipes = (event) => {
     ["xycraft_world:kivi_rajan", nul, nul],
     ["xycraft_machines:machine_base"],
   ]);
-  event.recipes.shaped("4x projectred_expansion:pneumatic_tube", [
-    ["minecraft:copper_ingot", "minecraft:glass", "minecraft:copper_ingot"],
-  ]);
+  // event.recipes.shaped("4x projectred_expansion:pneumatic_tube", [
+  //   ["minecraft:copper_ingot", "minecraft:glass", "minecraft:copper_ingot"],
+  // ]);
 
   event.recipes.minecraft.smelting("minecraft:glass", "minecraft:sand");
 
@@ -65,8 +63,6 @@ let commonRecipes = (event) => {
     ["chemlib:iron_plate", "kubejs:iron_rod", "chemlib:iron_plate"],
     [nul, "chemlib:iron_plate", nul],
   ]);
-
-  
 
   event.recipes.kubejs.shapeless("kubejs:chem", numToItem([3, 8, 5, 13]));
 
@@ -113,8 +109,28 @@ let commonRecipes = (event) => {
     ],
   ]);
 
+  event.recipes.kubejs.shaped("bountiful:bountyboard", [
+    [woodLogs, woodPlanks, woodLogs],
+    [woodPlanks, "minecraft:leather", woodPlanks],
+    [woodLogs, woodPlanks, woodLogs],
+  ]);
+  event.recipes.kubejs.shaped("16x wares:cardboard_box", [
+    [nul, "minecraft:paper", nul],
+    ["minecraft:paper", nul, "minecraft:paper"],
+    [nul, "minecraft:paper", nul],
+  ]);
 
-  event.recipes.kubejs.shaped('bountiful:bountyboard',[['minecraft:oak_log', 'minecraft:oak_planks', 'minecraft:oak_log'],['minecraft:oak_planks', 'kubejs:plus', 'minecraft:oak_planks'],['minecraft:oak_log', 'minecraft:oak_planks', 'minecraft:oak_log']])
-  event.recipes.kubejs.shaped('4x wares:cardboard_box',[[nul,'minecraft:paper',nul],['minecraft:paper',nul,'minecraft:paper'],[nul,'minecraft:paper',nul]])
+  event.recipes.kubejs.shaped("wares:delivery_table", [
+    ["minecraft:ink_sac", nul, "minecraft:feather"],
+    [woodLogs, woodPlanks, woodLogs],
+    [woodLogs, nul, woodLogs],
+  ]);
+  
+  event.recipes.kubejs.shaped('minecraft:stonecutter',[[nul,'minecraft:iron_ingot',nul],['minecraft:stone','minecraft:stone','minecraft:stone']])
+  
+  event.recipes.minecraft.smelting('minecraft:smooth_stone','minecraft:stone')
+
+  event.recipes.minecraft.stonecutting('4x projectred_core:plate','minecraft:smooth_stone')
+
 
 };
