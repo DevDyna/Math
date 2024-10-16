@@ -49,17 +49,6 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["4688925711CABE74"]
-			id: "5B2EBE75900E6709"
-			tasks: [{
-				id: "7EB7E4DEF2C45267"
-				item: "kubejs:0"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -5.0d
-		}
-		{
 			dependencies: ["379403715AB7EF36"]
 			id: "4A310953530B17EF"
 			subtitle: "Step by step"
@@ -70,17 +59,6 @@
 			}]
 			x: -1.0d
 			y: -6.5d
-		}
-		{
-			dependencies: ["4A310953530B17EF"]
-			id: "4688925711CABE74"
-			tasks: [{
-				id: "4052ADA1031CF989"
-				item: "kubejs:less"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -5.0d
 		}
 		{
 			dependencies: ["4999626C883F42B2"]
@@ -114,20 +92,6 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"5B2EBE75900E6709"
-				"27700C57A27D22EB"
-			]
-			id: "3A66D09EDBA63CBF"
-			tasks: [{
-				id: "06FFC8D19DE37FF6"
-				item: "twilightforest:uncrafting_table"
-				type: "item"
-			}]
-			x: -2.5d
 			y: -3.5d
 		}
 		{
