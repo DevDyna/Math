@@ -188,6 +188,128 @@
 			x: 2.0d
 			y: -2.0d
 		}
+		{
+			id: "25AAF5A33491F9FD"
+			tasks: [{
+				id: "6AFC4668ABD45D6C"
+				item: "bountiful:bountyboard"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			id: "39E1472A32EC9590"
+			tasks: [{
+				id: "2D2A55DBA022C3D0"
+				item: "wares:delivery_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			id: "0EC4ECF6E25D0232"
+			tasks: [{
+				id: "760FE412E05C08EA"
+				item: "wares:cardboard_box"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			id: "23D6D472649785C2"
+			tasks: [{
+				id: "2EFA877F4A779E55"
+				item: {
+					Count: 1
+					id: "bountiful:decree"
+					tag: {
+						"bountiful:decree_data": "{}"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			id: "056B079FEFAA80FA"
+			tasks: [{
+				id: "76914419E5DD818D"
+				item: "wares:completed_delivery_agreement"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			id: "2B6E96D8102B12D0"
+			tasks: [{
+				id: "4D180922C137E18F"
+				item: "wares:sealed_delivery_agreement"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			id: "2A7664DEA4ADD987"
+			tasks: [{
+				id: "5496B619427A8B47"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			id: "4688925711CABE74"
+			tasks: [{
+				id: "4052ADA1031CF989"
+				item: "kubejs:less"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4688925711CABE74"
+				"3A66D09EDBA63CBF"
+			]
+			id: "5B2EBE75900E6709"
+			tasks: [{
+				id: "7EB7E4DEF2C45267"
+				item: "kubejs:0"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			id: "3A66D09EDBA63CBF"
+			tasks: [{
+				id: "06FFC8D19DE37FF6"
+				item: "twilightforest:uncrafting_table"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			id: "18E7ECC304895BCA"
+			tasks: [{
+				id: "49A04AD106B8013D"
+				item: "chemlib:fermium"
+				type: "item"
+			}]
+			title: "Over 99!"
+			x: 4.5d
+			y: 5.0d
+		}
 	]
 	title: "4. Optimization"
 }
