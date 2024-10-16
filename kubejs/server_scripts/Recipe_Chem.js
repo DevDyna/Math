@@ -11,10 +11,10 @@ let ChemConversion = (event) => {
   //let mod_list = ["mekanism", "xycraft_world", "minecraft", "chemlib"];
 
   // CHEM NUMBER -> ELEMENT
-  for (let i = 1; i < crafting_number_max + 1; i++) {
+  for (let i = 0; i < crafting_number_max; i++) {
     event.recipes.kubejs.shapeless("chemlib:" + element_0[i], [
       "kubejs:chem",
-      "kubejs:" + i,
+      "kubejs:" + (i+1),
     ]);
 
     global.utils.mods.forEach((mod_list_1) => {
