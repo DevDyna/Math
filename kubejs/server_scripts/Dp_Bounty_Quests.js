@@ -13,7 +13,7 @@ let Bounty_Quest = (event) => {
  * @param {Internal.DataPackEventJS} event
  */
 let math_quest = (event) => {
-  for (let i = crafting_number_min; i < crafting_number_max / 2; i++) {
+  for (let i = crafting_number_min; i < crafting_number_max / 4; i++) {
     bounty.quests.math.ar.push(simple_deal("kubejs:" + i, 1, 10));
   }
 
@@ -64,7 +64,14 @@ let op_quest = (event) => {
  * @param {Internal.DataPackEventJS} event
  */
 let other_quest = (event) => {
-  bounty.quests.other.ar.push(simple_deal("minecraft:stone", 1, 10));
+
+  let types = ['dust','plate'] 
+  types.forEach(()=>{
+    global.chem.name.forEach(e=>{
+      bounty.quests.other.ar.push(simple_deal("chemlib:"+e+'_plate', 4, 10));
+      bounty.quests.other.ar.push(simple_deal("chemlib:"+e+'_dust', 4, 10));
+    })
+  })
 
   bounty.quests.other.ar.forEach((e, index) => {
     bounty.quests.other.obj[index] = e;
