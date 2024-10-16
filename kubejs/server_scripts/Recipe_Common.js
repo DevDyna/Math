@@ -114,6 +114,7 @@ let commonRecipes = (event) => {
   ]);
 
 
-
+  event.recipes.kubejs.shaped('bountiful:bountyboard',[['minecraft:oak_log', 'minecraft:oak_planks', 'minecraft:oak_log'],['minecraft:oak_planks', 'kubejs:plus', 'minecraft:oak_planks'],['minecraft:oak_log', 'minecraft:oak_planks', 'minecraft:oak_log']])
+  event.recipes.kubejs.shaped('4x wares:cardboard_box',[[nul,'minecraft:paper',nul],['minecraft:paper',nul,'minecraft:paper'],[nul,'minecraft:paper',nul]])
 
 };
