@@ -121,7 +121,7 @@ global.chem = {
     "livermorium",
     "tennessine",
     "oganesson",
-  ]
+  ],
 };
 
 //GENERIC VAR
@@ -130,12 +130,19 @@ const crafting_number_max = 99;
 const crafting_number_min = 0;
 const bounty_pools_url = "bountiful:bounty_pools/kubejs/";
 const bounty_decrees_url = "bountiful:bounty_decrees/kubejs/";
+const woodPlanks = "#minecraft:planks";
+const woodLogs = "#minecraft:logs";
 
 //BOUNTIFUL & WARES VAR
 let bounty = {
-  quests: { chem: {obj:{},ar:[]}, math: {obj:{},ar:[]}, operator: {obj:{},ar:[]}, other:{obj:{},ar:[]} },
-  rewards: {obj:{},ar:[]},
-  operator_bounty:['plus','less','for','div','power','chem'],
+  quests: {
+    chem: { obj: {}, ar: [] },
+    math: { obj: {}, ar: [] },
+    operator: { obj: {}, ar: [] },
+    other: { obj: {}, ar: [] },
+  },
+  rewards: { obj: {}, ar: [] },
+  operator_bounty: ["plus", "less", "for", "div", "power", "chem"],
 };
 
 /**
@@ -162,7 +169,7 @@ let rnd25 = () => {
  *
  * EXAMPLE
  * '{ordered:10,payment:[{Count:1,id:"minecraft:emerald"}],requested:[{Count:{max:16,min:4,step:4},id:"minecraft:stick"}],title:\'{"text":"A Great Deal"}\'}'
- * 
+ *
  * @param {string} displayName
  * @param {{max:Number,min:Number,step:Number}|Number} time_to_trade {max:10,min:1,step:2}
  * @param {{id:Internal.ItemStack,Count:Number,tag:Internal.CompoundTag_}} reward
@@ -194,18 +201,18 @@ let ware_nbt = (displayName, time_to_trade, reward, quest, deal_title) => {
     },
     unitWorth: 60,
     nbt: `{deliveryTime:{max:60,min:10,step:10},display:{Lore:['{"text":"${displayName}","italic":false}']},ordered:${time_to_trade},payment:${reward},requested:${quest},title:'{"text":"${deal_title}"}'}`,
-  }
+  };
 };
 /**
  * Item.of('wares:sealed_delivery_agreement', '')
- * @param {string} displayName 
- * @param {{max:Number,min:Number,step:Number}|Number} time_to_trade 
- * @param {Internal.ItemStack} reward 
- * @param {{max:Number,min:Number,step:Number}|Number} reward_count 
- * @param {Internal.ItemStack} payment 
- * @param {{max:Number,min:Number,step:Number}|Number} payment_count 
- * @param {string} deal_title 
- * @returns 
+ * @param {string} displayName
+ * @param {{max:Number,min:Number,step:Number}|Number} time_to_trade
+ * @param {Internal.ItemStack} reward
+ * @param {{max:Number,min:Number,step:Number}|Number} reward_count
+ * @param {Internal.ItemStack} payment
+ * @param {{max:Number,min:Number,step:Number}|Number} payment_count
+ * @param {string} deal_title
+ * @returns
  */
 let simple_ware = (
   displayName,
@@ -226,13 +233,13 @@ let simple_ware = (
 };
 
 /**
- * 
- * @param {Internal.ItemStack} item_input 
- * @param {number} min 
- * @param {number} max 
- * @returns 
+ *
+ * @param {Internal.ItemStack} item_input
+ * @param {number} min
+ * @param {number} max
+ * @returns
  */
-let simple_deal = (item_input,min,max) =>{
+let simple_deal = (item_input, min, max) => {
   return {
     type: "item",
     content: item_input,
@@ -240,6 +247,6 @@ let simple_deal = (item_input,min,max) =>{
       min: min,
       max: max,
     },
-    unitWorth: 60
-  }
-}
+    unitWorth: 60,
+  };
+};
