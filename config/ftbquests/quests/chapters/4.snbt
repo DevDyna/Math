@@ -364,17 +364,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["2CD03B038E2CC581"]
-			id: "160B2A551A69ED4C"
-			tasks: [{
-				id: "65F3EE518F4ED6DC"
-				item: "alchemistry:dissolver"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 0.5d
-		}
-		{
 			id: "74E67EFC40F65683"
 			tasks: [{
 				id: "313BE97F9B8E168E"
