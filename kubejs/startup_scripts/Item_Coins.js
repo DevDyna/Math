@@ -20,15 +20,15 @@ let CoinsInit = (event) => {
       .color(0, coins.hex[index])
       .tag("kubejs:coins")
       .tooltip(
-        "§7[:" +
+        "§7[" +
           (index == 0 ? "§f" : "§7") +
-          "1§7:::" +
+          "■" +
           (index == 1 ? "§f" : "§7") +
-          "2§7:::" +
+          "■" +
           (index == 2 ? "§f" : "§7") +
-          "3§7:::" +
+          "■" +
           (index == 3 ? "§f" : "§7") +
-          "4§7:]"
+          "■§7]"
       );
   });
 };
