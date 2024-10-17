@@ -92,6 +92,17 @@
 			x: 0.0d
 			y: -6.0d
 		}
+		{
+			dependencies: ["2CD03B038E2CC581"]
+			id: "160B2A551A69ED4C"
+			tasks: [{
+				id: "65F3EE518F4ED6DC"
+				item: "alchemistry:dissolver"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
 	]
 	title: "3. Interactions"
 }
