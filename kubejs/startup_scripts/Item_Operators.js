@@ -6,7 +6,8 @@ let OperatorInit = (event) => {
   let operator = (name) => {
     event
       .create(name)
-      .texture("kubejs:item/" + name)
+      .texture('layer0',"kubejs:item/card_2")
+      .texture('layer1',"kubejs:item/" + name)
       .glow(true)
       .tag("kubejs:operator");
   };
@@ -20,6 +21,7 @@ let OperatorInit = (event) => {
       .glow(true)
       .tag("kubejs:operator");
   };
+
   operator("plus");
   operator("less");
   operator("for");
@@ -31,4 +33,6 @@ let OperatorInit = (event) => {
     "chemlib:item/compound_liquid_layer_0",
     "chemlib:item/compound_liquid_layer_1"
   );
+
+
 };
