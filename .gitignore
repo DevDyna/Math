@@ -100,3 +100,9 @@ config/rftoolsutility-client.toml
 config/thoriumreactors-client.toml
 config/thoriumreactors-common.toml
 kubejs/README.txt
+config/emi.css
+config/mysticalagriculture-client.toml
+config/mysticalagriculture-common.toml
+config/pedestals-client.toml
+config/pedestals-common.toml
+emi.json
