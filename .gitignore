@@ -106,3 +106,7 @@ config/mysticalagriculture-common.toml
 config/pedestals-client.toml
 config/pedestals-common.toml
 emi.json
+.qmenu_opened.marker
+config/quark-common.toml
+config/zeta-common.toml
+resourcepacks/Quark Programmer Art.zip
