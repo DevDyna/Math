@@ -4,7 +4,7 @@
  */
 let LogFactoryRecipe = (event) => {
   let LogFactoryList = Ingredient.of("#minecraft:logs").itemIds.filter(
-    (item) => !/stripped|wood|hyphae|twilightforest/.test(item)
+    (item) => !/stripped|wood|hyphae/.test(item)
   );
 
   LogFactoryList = LogFactoryList.map((str) => str.replace(/log|stem/g, ""));
