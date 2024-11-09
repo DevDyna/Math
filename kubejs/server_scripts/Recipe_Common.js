@@ -20,7 +20,7 @@ let commonRecipes = (event) => {
   ]);
 
   event.recipes.kubejs.shaped("xycraft_machines:extractor", [
-    ["xycraft_world:kivi_rajan", nul, nul],
+    ["xycraft_world:kivi_rajan"],
     ["xycraft_machines:machine_base"],
   ]);
   // event.recipes.shaped("4x projectred_expansion:pneumatic_tube", [
@@ -48,20 +48,20 @@ let commonRecipes = (event) => {
   ]);
 
   event.recipes.kubejs.shaped("mekanismgenerators:wind_generator", [
-    [nul, "mekanismgenerators:turbine_blade", nul],
-    [nul, "kubejs:iron_rod", nul],
+    [nul, "mekanismgenerators:turbine_blade"],
+    [nul, "kubejs:iron_rod"],
     ["chemlib:iron_plate", "minecraft:iron_ingot", "chemlib:iron_plate"],
   ]);
 
   event.recipes.kubejs.shaped("4x kubejs:iron_rod", [
-    ["chemlib:iron_plate", nul, nul],
+    ["chemlib:iron_plate"],
     ["chemlib:iron_plate"],
   ]);
 
   event.recipes.kubejs.shaped("mekanismgenerators:turbine_blade", [
-    [nul, "chemlib:iron_plate", nul],
+    [nul, "chemlib:iron_plate"],
     ["chemlib:iron_plate", "kubejs:iron_rod", "chemlib:iron_plate"],
-    [nul, "chemlib:iron_plate", nul],
+    [nul, "chemlib:iron_plate"],
   ]);
 
   event.recipes.kubejs.shapeless("kubejs:chem", numToItem([3, 8, 5, 13]));
@@ -115,9 +115,9 @@ let commonRecipes = (event) => {
     [woodLogs, woodPlanks, woodLogs],
   ]);
   event.recipes.kubejs.shaped("16x wares:cardboard_box", [
-    [nul, "minecraft:paper", nul],
+    [nul, "minecraft:paper"],
     ["minecraft:paper", nul, "minecraft:paper"],
-    [nul, "minecraft:paper", nul],
+    [nul, "minecraft:paper"],
   ]);
 
   event.recipes.kubejs.shaped("wares:delivery_table", [
@@ -125,12 +125,16 @@ let commonRecipes = (event) => {
     [woodLogs, woodPlanks, woodLogs],
     [woodLogs, nul, woodLogs],
   ]);
-  
-  event.recipes.kubejs.shaped('minecraft:stonecutter',[[nul,'minecraft:iron_ingot',nul],['minecraft:stone','minecraft:stone','minecraft:stone']])
-  
-  event.recipes.minecraft.smelting('minecraft:smooth_stone','minecraft:stone')
 
-  event.recipes.minecraft.stonecutting('4x projectred_core:plate','minecraft:smooth_stone')
+  event.recipes.kubejs.shaped("minecraft:stonecutter", [
+    [nul, "minecraft:iron_ingot"],
+    ["minecraft:stone", "minecraft:stone", "minecraft:stone"],
+  ]);
 
+  event.recipes.minecraft.smelting("minecraft:smooth_stone", "minecraft:stone");
 
+  event.recipes.minecraft.stonecutting(
+    "4x projectred_core:plate",
+    "minecraft:smooth_stone"
+  );
 };
