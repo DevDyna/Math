@@ -19,16 +19,14 @@ let CoinsInit = (event) => {
       })
       .color(0, coins.hex[index])
       .tag("kubejs:coins")
-      .tooltip(
-        "§7[" +
-          (index == 0 ? "§f" : "§7") +
-          "■" +
-          (index == 1 ? "§f" : "§7") +
-          "■" +
-          (index == 2 ? "§f" : "§7") +
-          "■" +
-          (index == 3 ? "§f" : "§7") +
-          "■§7]"
-      );
+      .tooltip("[" + tipBar("■", 4, "§7", "§a", index, "§7") + "]");
   });
 };
+
+function tipBar(mainChar, maxChar, offCol, onCol, progress, colorEnd) {
+  let bar = offCol + "";
+  for (let i = 0; i < maxChar; i++) {
+    bar = progress <= i ? bar + onCol + mainChar : bar + mainChar;
+  }
+  return bar + colorEnd;
+}
