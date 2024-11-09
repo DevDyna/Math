@@ -44,15 +44,15 @@ let Bounty_Reward = (event) => {
         )
       );
 
-      bounty.rewards.ar.push(
-        ware_nbt(
-          "🔥 Uncrafting Table 🔥",
-          1,
-          `[{id:"twilightforest:uncrafting_table",Count:1}]`,
-          `[{id:"kubejs:` + e + `_coin",Count:{max:10,min:1,step:1}}]`,
-          "Twilight Forest ©"
-        )
-      );
+      // bounty.rewards.ar.push(
+      //   ware_nbt(
+      //     "🔥 Uncrafting Table 🔥",
+      //     1,
+      //     `[{id:"twilightforest:uncrafting_table",Count:1}]`,
+      //     `[{id:"kubejs:` + e + `_coin",Count:{max:10,min:1,step:1}}]`,
+      //     "Twilight Forest ©"
+      //   )
+      // );
 
       bounty.rewards.ar.push(
         ware_nbt(
