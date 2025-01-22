@@ -112,3 +112,4 @@ config/zeta-common.toml
 resourcepacks/Quark Programmer Art.zip
 config/essentials-client.toml
 config/essentials-server.toml
+/backups
